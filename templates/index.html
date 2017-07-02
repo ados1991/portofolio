@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+{% block main %}
+{% blocktrans %}
+<h2>Who am I ?</h2>
+<p>
+    Je me présente <span style="font-weight: bold">Guy ADOSSOU</span>. Je suis <span style="font-weight: bold">développeur FullStack (Python)</span>.<br />
+    Ma passion pour l'informatique m'ai venu de l'obtention de mon bac scientifique spécialité
+    (Mathématiques et Physiques) et du film <span style="font-weight: bold; color: white; background-color: #4cae4c">Matrix</span><iframe src="//giphy.com/embed/3Q3xn80Ka7Jvy" width="100%" height="255" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><br />
+    Je voulais dévouvrir le monde de l'informatique qui est un univers infini sur le plan des possibilités et plus interessant comparé à celui de la galaxie.<br />
+    Je sors de mon master (BAC+5) en Ingénerie des Systèmes et Réseaux de mon école In'TECH (anciennement nommé In Tech Info).
+    <span style="background-color: #2B6FB6; color: white">Déjà une couille ! (développeur, master Systèmes et Réseaux)</span>, je dois cette bonne métamorphose à trois causes :
+
+    <ol style="margin-left: 30px">
+        <li>
+            Durant mes projets d'études à l'école notamment pour la partie PI(Projet Informatique),
+
+        </li>
+        <br />
+        <li>
+            Mon stage technologue (BAC+3) et mon alternance de 6 mois à <a href="http://nexatech.fr/" target="_blank">Nexa Technologies</a> fut le tournant, durant ce stage
+            j'ai travaillé en étroite collaboration avec des développeurs experts en leurs domaines(Data Science, Data Analysis, Data Mining) comme <a href="http://www.cri.ensmp.fr/people/maisonneuve/website/" target="_blank">Vivien Maisonneuve</a> et
+            un plus connu dans la communauté (python et informatique) comme <a href="https://www.linkedin.com/in/arnaud-calmettes-94246a111/?ppe=1">Arnaud Calmettes</a>.
+
+        </li>
+        <br />
+        <li>
+            Ma passion en autodidacte, la découverte de la communauté <a href="https://www.pycon.org/">PyCon</a> à travers son site, ses vidéos sur youtube et la réalisation
+        </li>
+    </ol>
+</p>
+<ul>
+    <li><a href="/admin/">Log in to the admin interface</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/content-architecture.html">Creating custom page types</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html#templates">Modifying HTML templates</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html#why-isn-t-the-homepage-a-page-object-i-can-edit-via-the-admin">Changing this homepage</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html">Other frequently asked questions</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/configuration.html#default-settings">Full list of settings</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/deployment.html">Deploying to a production server</a></li>
+</ul>
+{% endblocktrans %}
+{% endblock %}
